@@ -9,14 +9,16 @@
         <module name="homework" />
         <module name="homework1" />
         <module name="homework2" />
-        <module name="SpringDevColibri" />
+        <module name="homework3" />
+        <module name="homework4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="homework" target="1.5" />
       <module name="homework1" target="1.5" />
       <module name="homework2" target="1.5" />
-      <module name="SpringDevColibri" target="1.5" />
+      <module name="homework3" target="1.8" />
+      <module name="homework4" target="1.8" />
+      <module name="SpringDevColibri" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

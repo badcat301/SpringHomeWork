@@ -12,6 +12,7 @@
         <constructor-arg name="events" ref="event"/>
         <constructor-arg name="someLogger" ref="logger"/>
 
+
     </bean>
     <bean name="logger" class="util.impl.SomeLogger"/>
 
