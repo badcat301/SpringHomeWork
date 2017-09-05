@@ -1,5 +1,7 @@
 package pojo;
 
+import java.util.ArrayList;
+
 public class Profession {
 
     String profession;
@@ -8,10 +10,14 @@ public class Profession {
         this.profession = profession;
     }
 
+
+
+
+
     @Override
     public String toString() {
         return "Profession{" +
-                "profession = '" + profession + '\'' +
+                "profession=" + profession +
                 '}';
     }
 }
