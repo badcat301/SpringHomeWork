@@ -28,7 +28,7 @@ public class Student extends StudentGroup {
                 "Student Name= '" + studentName + '\'' +
                 ", Point= " + pointOfstudy +
                 ", Group= "+getGroupNumber()+
-                '}';
+                '}'+"\n";
     }
 
 }
