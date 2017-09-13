@@ -15,8 +15,8 @@ public class EntryPoint {
 //        ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
 //
 //
-//        BeanFactory beanFactory = new ClassPathXmlApplicationContext("beans.xml");
-//        Student student = (Student) beanFactory.getBean("studens");
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("beans.xml");
+        Student student = (Student) beanFactory.getBean("studens");
 
         Student student1 = new Student(2, "Alex", 89);
         Student student2 = new Student(1, "Piter", 40);
