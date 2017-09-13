@@ -4,7 +4,6 @@ public class Student extends StudentGroup {
 
 
     private String studentName;
-
     private int pointOfstudy;
 
     public Student(int groupNumber, String studentName, int pointOfstudy) {
@@ -13,6 +12,9 @@ public class Student extends StudentGroup {
         this.pointOfstudy = pointOfstudy;
 
     }
+
+
+
 
     public String getStudentName() {
         return studentName;
@@ -27,8 +29,8 @@ public class Student extends StudentGroup {
         return "Student{" +
                 "Student Name= '" + studentName + '\'' +
                 ", Point= " + pointOfstudy +
-                ", Group= "+getGroupNumber()+
-                '}'+"\n";
+                ", Group= " + getGroupNumber() +
+                '}' + "\n";
     }
 
 }

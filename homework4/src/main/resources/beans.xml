@@ -3,11 +3,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-<bean name="studens" class="pojo.Student">
-    <constructor-arg value="1" ref="studens">
 
-    </constructor-arg>
-</bean>
+    <bean name="studens" class="pojo.Student">
+
+
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg index="1" value="SDF"/>
+        <constructor-arg index="2" value="50"/>
+
+
+    </bean>
 
 
 </beans>

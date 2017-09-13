@@ -2,7 +2,7 @@ package pojo;
 
 public class StudentGroup {
 
-   private int groupNumber;
+    private int groupNumber;
 
     public StudentGroup(int groupNumber) {
         this.groupNumber = groupNumber;
