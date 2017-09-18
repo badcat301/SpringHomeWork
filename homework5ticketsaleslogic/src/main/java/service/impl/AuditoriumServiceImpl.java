@@ -1,6 +1,6 @@
-package Service.impl;
+package service.impl;
 
-import Service.AuditoriumService;
+import service.AuditoriumService;
 
 public class AuditoriumServiceImpl implements AuditoriumService {
     @Override

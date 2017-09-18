@@ -1,5 +1,12 @@
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class EntryPoint {
     public static void main(String[] args) {
-        System.out.printf("xc");
+
+        ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
+        ctx.registerShutdownHook();
+        ctx.start();
+
     }
 }

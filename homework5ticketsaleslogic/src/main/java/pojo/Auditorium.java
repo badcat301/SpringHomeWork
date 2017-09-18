@@ -1,11 +1,12 @@
-package Pojo;
+package pojo;
 
 public class Auditorium {
+
     private String name;
     private int numberOfSeats;
-    private int vipSeats;
+    private boolean vipSeats;
 
-    public Auditorium(String name, int numberOfSeats, int vipSeats) {
+    public Auditorium(String name, int numberOfSeats, boolean vipSeats) {
         this.name = name;
         this.numberOfSeats = numberOfSeats;
         this.vipSeats = vipSeats;
@@ -27,11 +28,11 @@ public class Auditorium {
         this.numberOfSeats = numberOfSeats;
     }
 
-    public int getVipSeats() {
+    public boolean getVipSeats() {
         return vipSeats;
     }
 
-    public void setVipSeats(int vipSeats) {
+    public void setVipSeats(boolean vipSeats) {
         this.vipSeats = vipSeats;
     }
 
