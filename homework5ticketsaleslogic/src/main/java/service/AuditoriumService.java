@@ -1,9 +1,13 @@
 package service;
 
+import pojo.Auditorium;
+
+import java.util.List;
+
 public interface AuditoriumService {
 
-    void getAll();
+    public List<Auditorium> getAll();
 
-    void getByName();
+   public Auditorium getByName(String name);
 
 }

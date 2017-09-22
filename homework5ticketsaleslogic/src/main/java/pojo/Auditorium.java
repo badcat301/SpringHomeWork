@@ -6,6 +6,9 @@ public class Auditorium {
     private int numberOfSeats;
     private boolean vipSeats;
 
+    public Auditorium() {
+    }
+
     public Auditorium(String name, int numberOfSeats, boolean vipSeats) {
         this.name = name;
         this.numberOfSeats = numberOfSeats;

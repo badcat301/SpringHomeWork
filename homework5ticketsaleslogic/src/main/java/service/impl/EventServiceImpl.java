@@ -5,11 +5,14 @@ import pojo.Event;
 import service.EventService;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class EventServiceImpl implements EventService {
-
 
 
     @Override
@@ -50,12 +53,32 @@ public class EventServiceImpl implements EventService {
 
     @Override
     public List<Event> getForDateRange(LocalDateTime from, LocalDateTime to) {
-        return null;
+
+        return InMemmoryDataBaseSimulator.getEvents().stream().filter(event ->
+        {
+            final long days = from.until(to, ChronoUnit.DAYS);
+            long start = from.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+            long end = to.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+
+            long current = event.getLocalDate().atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli();
+            return current >= start && current <= end;
+
+        }).collect(Collectors.toList());
+
     }
 
     @Override
     public List<Event> getNextEvents(LocalDateTime to) {
-        return null;
+
+        return InMemmoryDataBaseSimulator.getEvents().stream().filter(event -> {
+            long now = LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+            long end = to.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+
+            long current = event.getLocalDate().atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli();
+            return current >= now && current <= end;
+
+        }).collect(Collectors.toList());
+
     }
 
 }
