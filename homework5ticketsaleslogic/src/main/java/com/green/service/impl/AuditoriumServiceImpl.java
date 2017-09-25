@@ -1,12 +1,14 @@
-package service.impl;
+package com.green.service.impl;
 
-import dao.InMemmoryDataBaseSimulator;
-import pojo.Auditorium;
-import service.AuditoriumService;
+import com.green.dao.InMemmoryDataBaseSimulator;
+import org.springframework.stereotype.Service;
+import com.green.pojo.Auditorium;
+import com.green.service.AuditoriumService;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class AuditoriumServiceImpl implements AuditoriumService {
 
     @Override

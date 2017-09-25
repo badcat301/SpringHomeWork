@@ -1,13 +1,12 @@
-package dao;
+package com.green.dao;
 
-import pojo.Auditorium;
-import pojo.Event;
-import pojo.User;
+import com.green.pojo.Auditorium;
+import com.green.pojo.Event;
+import com.green.pojo.User;
 
 import java.util.*;
 
 public class InMemmoryDataBaseSimulator {
-
     private static List<User> users = new ArrayList<User>();
     private static List<Event> events = new ArrayList<Event>();
     private static List<Auditorium> auditoriums = new ArrayList<>();

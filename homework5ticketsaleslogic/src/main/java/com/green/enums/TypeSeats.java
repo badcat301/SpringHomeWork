@@ -1,4 +1,4 @@
-package enums;
+package com.green.enums;
 
 public enum TypeSeats {
 

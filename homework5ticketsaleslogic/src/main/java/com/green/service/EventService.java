@@ -1,6 +1,6 @@
-package service;
+package com.green.service;
 
-import pojo.Event;
+import com.green.pojo.Event;
 
 import java.time.LocalDateTime;
 import java.util.List;

@@ -1,7 +1,6 @@
-package service.impl;
+package com.green.pojo;
 
-import enums.TypeSeats;
-import pojo.Auditorium;
+import com.green.enums.TypeSeats;
 
 public class Seat {
 

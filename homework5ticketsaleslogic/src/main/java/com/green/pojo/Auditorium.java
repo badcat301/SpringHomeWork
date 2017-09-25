@@ -1,4 +1,4 @@
-package pojo;
+package com.green.pojo;
 
 public class Auditorium {
 

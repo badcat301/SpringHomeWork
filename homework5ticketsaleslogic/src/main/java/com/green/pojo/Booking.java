@@ -1,6 +1,4 @@
-package pojo;
-
-import service.impl.Seat;
+package com.green.pojo;
 
 import java.time.LocalDateTime;
 

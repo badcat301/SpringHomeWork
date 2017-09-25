@@ -1,6 +1,6 @@
-package service;
+package com.green.service;
 
-import pojo.Auditorium;
+import com.green.pojo.Auditorium;
 
 import java.util.List;
 

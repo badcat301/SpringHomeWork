@@ -1,12 +1,14 @@
-package service.impl;
+package com.green.service.impl;
 
-import dao.InMemmoryDataBaseSimulator;
-import pojo.User;
-import service.UserService;
+import com.green.dao.InMemmoryDataBaseSimulator;
+import org.springframework.stereotype.Service;
+import com.green.pojo.User;
+import com.green.service.UserService;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class UserServiceImpl implements UserService {
 
 

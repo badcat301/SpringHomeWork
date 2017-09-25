@@ -1,17 +1,18 @@
-package service.impl;
+package com.green.service.impl;
 
-import dao.InMemmoryDataBaseSimulator;
-import pojo.Event;
-import service.EventService;
+import com.green.dao.InMemmoryDataBaseSimulator;
+import org.springframework.stereotype.Service;
+import com.green.pojo.Event;
+import com.green.service.EventService;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+@Service
 public class EventServiceImpl implements EventService {
 
 

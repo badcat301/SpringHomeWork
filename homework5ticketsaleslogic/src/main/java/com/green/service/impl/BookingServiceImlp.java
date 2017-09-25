@@ -1,9 +1,11 @@
-package service.impl;
+package com.green.service.impl;
 
-import pojo.Booking;
-import pojo.Event;
-import pojo.User;
-import service.BookingService;
+import org.springframework.stereotype.Service;
+import com.green.pojo.Booking;
+import com.green.pojo.Event;
+import com.green.pojo.Seat;
+import com.green.pojo.User;
+import com.green.service.BookingService;
 
 
 import java.time.LocalDate;
@@ -11,6 +13,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class BookingServiceImlp implements BookingService {
 
     private List<Booking> tickets;

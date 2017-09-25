@@ -1,6 +1,6 @@
-package service;
+package com.green.service;
 
-import pojo.User;
+import com.green.pojo.User;
 
 import java.util.List;
 

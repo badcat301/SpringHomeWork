@@ -1,9 +1,9 @@
-package service;
+package com.green.service;
 
-import pojo.Booking;
-import pojo.Event;
-import pojo.User;
-import service.impl.Seat;
+import com.green.pojo.Booking;
+import com.green.pojo.Event;
+import com.green.pojo.User;
+import com.green.pojo.Seat;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

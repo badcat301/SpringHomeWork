@@ -1,4 +1,4 @@
-package pojo;
+package com.green.pojo;
 
 import java.time.LocalDate;
 
@@ -17,6 +17,10 @@ public class Event {
         this.name = name;
         this.priceTickets = priceTickets;
         this.localDate = localDate;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {
